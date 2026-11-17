@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SPARK PHYSICS — Belajar Fisika Kelas XI</title>
+  <meta name="description" content="SPARK PHYSICS — media pembelajaran Fisika Kelas XI dengan materi, simulasi interaktif, video, dan latihan soal.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['\\(','\\)'], ['$', '$']], displayMath: [['\\[','\\]'], ['$$','$$']] },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body>
+<div class="app">
+
+  <header class="topbar">
+    <a class="brand" href="#" data-page="home">
+      <span class="brand-mark">S</span>
+      <span><b>SPARK</b><small>PHYSICS</small></span>
+    </a>
+
+    <nav class="main-nav" aria-label="Navigasi utama">
+      <button class="nav-btn active" data-page="home">Beranda</button>
+      <button class="nav-btn" data-page="guide">Petunjuk</button>
+      <button class="nav-btn" data-page="materials">Materi</button>
+      <button class="nav-btn" data-page="simulation">Simulasi</button>
+      <button class="nav-btn" data-page="videos">Video</button>
+      <button class="nav-btn" data-page="practice">Latihan</button>
+      <button class="nav-btn" data-page="mentoring">Pendampingan</button>
+    </nav>
+
+    <button class="mobile-menu" id="mobileMenu" aria-label="Buka menu">☰</button>
+  </header>
+
+  <main class="book">
+    <!-- BERANDA -->
+    <section class="page active" id="page-home">
+      <div class="page-scroll">
+        <section class="hero">
+          <div class="hero-copy">
+            <span class="eyebrow">MEDIA PEMBELAJARAN FISIKA KELAS XI</span>
+            <h1>Belajar Fisika<br><em>lebih hidup.</em></h1>
+            <p>SPARK PHYSICS menggabungkan materi lengkap, ilustrasi, simulasi interaktif, video pembelajaran, latihan soal, dan pendampingan dalam satu ruang belajar.</p>
+            <div class="hero-actions">
+              <button class="primary-btn" data-page="materials">Mulai Belajar →</button>
+              <button class="ghost-btn" data-page="simulation">Coba Simulasi</button>
+            </div>
+            <div class="mini-stats">
+              <div><b>7</b><span>Bab utama</span></div>
+              <div><b>105</b><span>Latihan soal</span></div>
+              <div><b>10</b><span>Video belajar</span></div>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="orbit orbit-a"></div>
+            <div class="orbit orbit-b"></div>
+            <div class="physics-card card-vector">
+              <svg viewBox="0 0 180 120" role="img" aria-label="Ilustrasi vektor">
+                <defs><marker id="a1" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L7,3 z"/></marker></defs>
+                <line x1="28" y1="94" x2="155" y2="30" stroke="currentColor" stroke-width="5" marker-end="url(#a1)"/>
+                <line x1="28" y1="94" x2="155" y2="94" stroke="currentColor" opacity=".22"/>
+                <line x1="155" y1="94" x2="155" y2="30" stroke="currentColor" opacity=".22"/>
+                <text x="92" y="55" font-size="12" fill="currentColor">A</text>
+              </svg>
+              <b>VEKTOR</b><small>arah & besar</small>
+            </div>
+
+            <div class="physics-card card-wave">
+              <svg viewBox="0 0 190 110" role="img" aria-label="Ilustrasi gelombang">
+                <path d="M0 55 C20 5 40 5 60 55 S100 105 120 55 S160 5 190 55" fill="none" stroke="currentColor" stroke-width="5"/>
+                <line x1="10" y1="88" x2="175" y2="88" stroke="currentColor" opacity=".2"/>
+              </svg>
+              <b>GELOMBANG</b><small>amplitudo & frekuensi</small>
+            </div>
+
+            <div class="physics-card card-energy">
+              <svg viewBox="0 0 170 120" role="img" aria-label="Ilustrasi energi">
+                <circle cx="84" cy="57" r="28" fill="none" stroke="currentColor" stroke-width="5"/>
+                <path d="M84 29 L84 10 M84 85 L84 104 M56 57 L37 57 M112 57 L131 57" stroke="currentColor" stroke-width="4"/>
+                <path d="M67 57 L79 69 L103 43" fill="none" stroke="currentColor" stroke-width="5"/>
+              </svg>
+              <b>ENERGI</b><small>usaha & perubahan</small>
+            </div>
+
+            <div class="physics-card card-fluid">
+              <svg viewBox="0 0 180 110" role="img" aria-label="Ilustrasi fluida">
+                <path d="M0 52 Q45 40 90 52 T180 52 V110 H0Z" fill="currentColor" opacity=".12"/>
+                <path d="M0 52 Q45 40 90 52 T180 52" fill="none" stroke="currentColor" stroke-width="4"/>
+                <rect x="72" y="34" width="35" height="30" rx="7" fill="none" stroke="currentColor" stroke-width="4"/>
+                <path d="M89 64 V91" stroke="currentColor" stroke-width="4"/>
+              </svg>
+              <b>FLUIDA</b><small>tekanan & gaya apung</small>
+            </div>
+          </div>
+        </section>
+
+        <section class="topic-strip">
+          <div class="section-title">
+            <span class="eyebrow">PETA BELAJAR</span>
+            <h2>Materi Kelas XI</h2>
+            <p>Semua bab sudah tersedia di dalam sistem. Mulai dari vektor, lalu lanjutkan sesuai kebutuhanmu.</p>
+          </div>
+          <div class="topic-grid">
+            <button class="topic-tile featured" data-page="materials" data-chapter="vector"><span>01</span><b>VEKTOR</b><small>besar, arah, komponen, resultan</small></button>
+            <button class="topic-tile" data-page="materials" data-chapter="kinematics"><span>02</span><b>KINEMATIKA</b><small>gerak dan grafik</small></button>
+            <button class="topic-tile" data-page="materials" data-chapter="dynamics"><span>03</span><b>DINAMIKA</b><small>gaya dan hukum Newton</small></button>
+            <button class="topic-tile" data-page="materials" data-chapter="energy"><span>04</span><b>USAHA & ENERGI</b><small>kerja dan konservasi</small></button>
+            <button class="topic-tile" data-page="materials" data-chapter="momentum"><span>05</span><b>MOMENTUM & IMPULS</b><small>tumbukan dan perubahan momentum</small></button>
+            <button class="topic-tile" data-page="materials" data-chapter="waves"><span>06</span><b>GETARAN & GELOMBANG</b><small>osilasi dan gelombang</small></button>
+            <button class="topic-tile" data-page="materials" data-chapter="fluids"><span>07</span><b>FLUIDA</b><small>tekanan, Pascal, Archimedes</small></button>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- PETUNJUK -->
+    <section class="page" id="page-guide">
+      <div class="page-scroll narrow">
+        <div class="page-heading lavender">
+          <span class="eyebrow">SEBELUM MULAI</span>
+          <h1>Petunjuk Penggunaan</h1>
+          <p>Anggap SPARK PHYSICS seperti buku digital: setiap menu adalah lembar yang dapat dibuka tanpa harus menggulir satu halaman panjang.</p>
+        </div>
+
+        <div class="guide-layout">
+          <div class="guide-illustration">
+            <div class="book-demo">
+              <div class="demo-page left">
+                <span>01</span><b>Materi</b><small>pilih bab</small>
+              </div>
+              <div class="demo-page right">
+                <span>→</span><b>Simulasi</b><small>atur variabel</small>
+              </div>
+              <div class="demo-cursor">⌁</div>
+            </div>
+          </div>
+          <div class="guide-steps">
+            <article><i>01</i><div><h3>Pilih lembar</h3><p>Gunakan navigasi di bagian atas untuk berpindah antar halaman. Tidak perlu membaca seluruh halaman dari atas sampai bawah.</p></div></article>
+            <article><i>02</i><div><h3>Buka bab materi</h3><p>Pada halaman Materi, klik judul bab di sebelah kiri. Isi materi akan berubah seperti membuka bab pada buku.</p></div></article>
+            <article><i>03</i><div><h3>Mainkan simulasi</h3><p>Geser slider, ubah variabel, lalu tekan tombol mulai. Visualisasi akan bergerak dan nilai fisika diperbarui secara real-time.</p></div></article>
+            <article><i>04</i><div><h3>Belajar lewat video</h3><p>Pilih video yang sesuai dengan submateri. Setelah itu kembali ke Materi atau Simulasi untuk memperkuat pemahaman.</p></div></article>
+            <article><i>05</i><div><h3>Uji pemahaman</h3><p>Latihan disusun per bab, masing-masing 15 soal. Setelah mengerjakan, lihat skor dan pembahasan soal.</p></div></article>
+          </div>
+        </div>
+
+        <div class="flow-note">
+          <span>ALUR BELAJAR</span>
+          <b>Materi → Video → Simulasi → Contoh Soal → Latihan → Pendampingan</b>
+        </div>
+      </div>
+    </section>
+
+    <!-- MATERI -->
+    <section class="page" id="page-materials">
+      <div class="materials-book">
+        <aside class="chapter-sidebar">
+          <div class="sidebar-head"><span>ISI BUKU</span><b>Fisika Kelas XI</b></div>
+          <div id="chapterList"></div>
+        </aside>
+        <article class="material-reader">
+          <div id="materialContent"></div>
+          <div class="reader-footer">
+            <button id="prevChapter" class="ghost-btn">← Bab sebelumnya</button>
+            <span id="chapterCounter">1 / 7</span>
+            <button id="nextChapter" class="primary-btn">Bab berikutnya →</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SIMULASI -->
+    <section class="page" id="page-simulation">
+      <div class="page-scroll">
+        <div class="page-heading lavender">
+          <span class="eyebrow">VIRTUAL LAB</span>
+          <h1>Simulasi Interaktif</h1>
+          <p>Atur variabel seperti laboratorium virtual. Setiap bab mempunyai simulasi berbeda agar konsep dapat dilihat, bukan hanya dibaca.</p>
+        </div>
+        <div class="sim-layout">
+          <aside class="sim-sidebar">
+            <span class="eyebrow">PILIH SIMULASI</span>
+            <div id="simChapterList"></div>
+          </aside>
+          <section class="sim-stage">
+            <div class="sim-top">
+              <div><span id="simTitle">Vektor</span><small id="simSubtitle">Resultan dua vektor</small></div>
+              <button class="small-btn" id="simPlay">▶ Mulai</button>
+            </div>
+            <div class="sim-canvas" id="simCanvas"></div>
+            <div class="sim-controls" id="simControls"></div>
+            <div class="sim-readouts" id="simReadouts"></div>
+            <div class="sim-explain" id="simExplain"></div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIDEO -->
+    <section class="page" id="page-videos">
+      <div class="page-scroll">
+        <div class="page-heading lavender">
+          <span class="eyebrow">VIDEO PEMBELAJARAN</span>
+          <h1>Belajar dengan Penjelasan Visual</h1>
+          <p>Sepuluh topik video disusun mengikuti alur materi vektor. Video dapat dibuka langsung dari kartu pembelajaran.</p>
+        </div>
+        <div class="video-grid" id="videoGrid"></div>
+        <div class="video-source-note">Catatan: video eksternal berasal dari YouTube. Jika suatu video berubah atau dihapus oleh pemiliknya, tombol pada kartu tetap dapat digunakan untuk mencari topik terkait di YouTube.</div>
+      </div>
+    </section>
+
+    <!-- LATIHAN -->
+    <section class="page" id="page-practice">
+      <div class="page-scroll">
+        <div class="page-heading lavender">
+          <span class="eyebrow">LATIHAN SOAL</span>
+          <h1>Uji Pemahamanmu</h1>
+          <p>Setiap bab memiliki 15 soal. Pilih bab, jawab soal, lalu lihat skor dan pembahasannya.</p>
+        </div>
+        <div class="practice-layout">
+          <aside class="practice-sidebar" id="practiceTabs"></aside>
+          <section class="quiz-panel">
+            <div class="quiz-head"><div><span id="quizChapter">VEKTOR</span><h2 id="quizProgress">Soal 1 dari 15</h2></div><div class="score-pill">Skor <b id="quizScore">0</b></div></div>
+            <div class="progress-track"><span id="quizProgressBar"></span></div>
+            <div id="quizQuestion"></div>
+            <div id="quizOptions" class="quiz-options"></div>
+            <div class="quiz-actions">
+              <button class="ghost-btn" id="quizPrev">← Sebelumnya</button>
+              <button class="primary-btn" id="quizNext">Berikutnya →</button>
+            </div>
+            <div id="quizResult" class="quiz-result hidden"></div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- PENDAMPINGAN -->
+    <section class="page" id="page-mentoring">
+      <div class="page-scroll narrow">
+        <div class="page-heading lavender">
+          <span class="eyebrow">PENDAMPINGAN KELAS XI</span>
+          <h1>Belajar Tidak Harus Sendiri</h1>
+          <p>Gunakan SPARK PHYSICS sebagai ruang belajar mandiri, lalu gunakan pendampingan untuk membahas bagian yang masih membingungkan.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service-card"><span>01</span><h3>Pertemuan Belajar</h3><p>Pembelajaran terarah dengan fokus konsep, contoh, dan latihan.</p></article>
+          <article class="service-card"><span>02</span><h3>Materi Lengkap</h3><p>Materi kelas XI dilengkapi rangkuman, persamaan, ilustrasi, dan aplikasi.</p></article>
+          <article class="service-card"><span>03</span><h3>Latihan & Pembahasan</h3><p>Latihan per bab dengan 15 soal dan pembahasan untuk menguatkan konsep.</p></article>
+          <article class="service-card"><span>04</span><h3>Pendampingan Kelas</h3><p>Tanya jawab dan arahan belajar untuk membantu memahami materi yang sulit.</p></article>
+        </div>
+        <div class="wa-card">
+          <div class="wa-icon">WA</div>
+          <div><span class="eyebrow">SALURAN WHATSAPP</span><h2>Ikuti saluran SPARK PHYSICS</h2><p>Dapatkan informasi pembelajaran, materi, dan update kegiatan melalui saluran WhatsApp.</p></div>
+          <a class="primary-btn" href="https://whatsapp.com/channel/0029Vb94gli4NVinxjnpCh3z" target="_blank" rel="noopener">Ikuti Saluran →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="toast" id="toast"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
